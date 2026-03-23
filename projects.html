@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Reshab — Home lab setups, Linux server configurations, automation scripts, and more." />
+  <meta name="author" content="Reshab" />
+  <meta property="og:title" content="Projects | Reshab IT Portfolio" />
+  <meta property="og:description" content="Practical IT projects: server setups, Linux labs, Office automation, and more." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <title>Projects | Reshab</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <!-- ── Page Header ── -->
+    <header class="page-header" aria-label="Projects page header">
+      <div class="container">
+        <h1>My <span class="highlight-blue">Projects</span></h1>
+        <p>Practical IT projects built to learn, experiment, and demonstrate real-world skills.</p>
+      </div>
+    </header>
+
+    <!-- ── Projects Grid ── -->
+    <section class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 class="section-title reveal" id="projects-heading">Featured Work</h2>
+        <p class="section-subtitle reveal reveal-delay-1">A collection of hands-on IT projects spanning server setup, Linux administration, and productivity tools.</p>
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-card__banner blue" aria-hidden="true">🏠</div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="badge badge-blue">Linux</span>
+                <span class="badge badge-gray">Networking</span>
+                <span class="badge badge-blue">Server</span>
+              </div>
+              <h3 class="project-card__title">Home Lab Server Setup</h3>
+              <p class="project-card__desc">
+                Built a multi-service home lab using Ubuntu Server. Configured DHCP, DNS (Pi-hole),
+                SSH key-based authentication, and a local web server (Nginx). Set up automated
+                backups with cron jobs and rsync.
+              </p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link" aria-label="View Home Lab project on GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-card__banner dark" aria-hidden="true">🐧</div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="badge badge-gray">Linux</span>
+                <span class="badge badge-blue">Bash</span>
+                <span class="badge badge-gray">Automation</span>
+              </div>
+              <h3 class="project-card__title">Linux System Maintenance Scripts</h3>
+              <p class="project-card__desc">
+                A collection of bash scripts for automating routine system maintenance tasks:
+                disk usage reporting, log rotation, package updates, and restart-on-crash
+                service monitoring using systemd and cron.
+              </p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link" aria-label="View Bash scripts on GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal reveal-delay-3">
+            <div class="project-card__banner blue" aria-hidden="true">🌐</div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="badge badge-blue">Apache</span>
+                <span class="badge badge-blue">Nginx</span>
+                <span class="badge badge-gray">SSL/TLS</span>
+              </div>
+              <h3 class="project-card__title">Web Server Deployment (Apache & Nginx)</h3>
+              <p class="project-card__desc">
+                Deployed and configured both Apache and Nginx on a VPS running Ubuntu. Set up
+                virtual hosts, enabled SSL/TLS via Let's Encrypt, configured reverse proxy
+                rules, and tuned performance with gzip and caching headers.
+              </p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link" aria-label="View Web Server project">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-card__banner gray" aria-hidden="true">📊</div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="badge badge-red">Excel</span>
+                <span class="badge badge-red">Microsoft Office</span>
+                <span class="badge badge-gray">Automation</span>
+              </div>
+              <h3 class="project-card__title">Excel IT Asset Tracker</h3>
+              <p class="project-card__desc">
+                Designed a comprehensive IT asset management spreadsheet in Microsoft Excel using
+                formulas, conditional formatting, drop-down validation, and pivot tables to track
+                hardware inventory, warranties, and assignment history.
+              </p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link" aria-label="View Excel tracker">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  Download
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-card__banner dark" aria-hidden="true">🔒</div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="badge badge-blue">Linux</span>
+                <span class="badge badge-blue">Fail2ban</span>
+                <span class="badge badge-gray">Security</span>
+              </div>
+              <h3 class="project-card__title">Server Hardening Checklist</h3>
+              <p class="project-card__desc">
+                Developed a repeatable server hardening procedure for fresh Ubuntu deployments:
+                disable root SSH login, configure Fail2ban, set up UFW rules, enable unattended
+                upgrades, and audit open ports with nmap.
+              </p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link" aria-label="View Server Hardening Checklist on GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card reveal reveal-delay-3">
+            <div class="project-card__banner red" aria-hidden="true">🖧</div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="badge badge-blue">Active Directory</span>
+                <span class="badge badge-blue">Windows Server</span>
+                <span class="badge badge-gray">DNS</span>
+              </div>
+              <h3 class="project-card__title">Windows Server AD Lab</h3>
+              <p class="project-card__desc">
+                Set up a Windows Server 2022 domain lab in VirtualBox. Configured Active Directory
+                Domain Services, DHCP, DNS, organisational units, group policies, and joined
+                Windows 10 client machines to the domain.
+              </p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link" aria-label="View AD Lab writeup">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                  View Writeup
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="section section--alt" aria-labelledby="cta-projects">
+      <div class="container" style="text-align:center">
+        <h2 class="section-title reveal" id="cta-projects">Interested in Collaborating?</h2>
+        <p class="section-subtitle reveal reveal-delay-1">I'm always looking for new challenges, internship opportunities, or just a good technical conversation.</p>
+        <div class="reveal reveal-delay-2" style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap">
+          <a href="/contact.html" class="btn btn-primary">Get in Touch</a>
+          <a href="/about.html" class="btn btn-outline">About Me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script src="/js/components.js"></script>
+</body>
+</html>

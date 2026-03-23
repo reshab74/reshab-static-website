@@ -1,0 +1,5 @@
+# Cloudflare Pages — Redirect Rules
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Custom 404 page
+/* /404.html 404

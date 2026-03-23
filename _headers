@@ -1,0 +1,32 @@
+/*
+ * Cloudflare Pages — Security & Cache Headers
+ * https://developers.cloudflare.com/pages/configuration/headers/
+ */
+
+/*
+ * Global security headers — applied to all routes
+ */
+https://:project.pages.dev/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-XSS-Protection: 1; mode=block
+
+/*
+ * Cache static assets aggressively (1 year)
+ */
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*
+ * HTML — no cache (always fresh)
+ */
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate

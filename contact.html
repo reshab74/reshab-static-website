@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Reshab — IT student open to internships, freelance work, and IT opportunities." />
+  <meta name="author" content="Reshab" />
+  <meta property="og:title" content="Contact | Reshab IT Portfolio" />
+  <meta property="og:description" content="Get in touch with Reshab for IT opportunities, internships, or collaboration." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <title>Contact | Reshab</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <!-- ── Page Header ── -->
+    <header class="page-header" aria-label="Contact page header">
+      <div class="container">
+        <h1>Get in <span class="highlight-blue">Touch</span></h1>
+        <p>Open to internships, freelance IT work, and interesting conversations.</p>
+      </div>
+    </header>
+
+    <!-- ── Contact Section ── -->
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Info column -->
+          <div class="contact-info">
+            <h2 id="contact-heading" style="margin-bottom:1.25rem">Let's <span class="highlight-blue">Connect</span></h2>
+
+            <div class="contact-info-item">
+              <div class="contact-info-item__icon">📧</div>
+              <div>
+                <div class="contact-info-item__label">Email</div>
+                <a href="mailto:reshab@example.com" class="contact-info-item__value">reshab@example.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-item__icon">📍</div>
+              <div>
+                <div class="contact-info-item__label">Location</div>
+                <div class="contact-info-item__value">Nepal 🇳🇵</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-item__icon">💼</div>
+              <div>
+                <div class="contact-info-item__label">LinkedIn</div>
+                <a href="https://linkedin.com/in/reshab" target="_blank" rel="noopener noreferrer" class="contact-info-item__value">linkedin.com/in/reshab</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-item__icon">🐙</div>
+              <div>
+                <div class="contact-info-item__label">GitHub</div>
+                <a href="https://github.com/reshab74" target="_blank" rel="noopener noreferrer" class="contact-info-item__value">github.com/reshab74</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-item__icon">⏰</div>
+              <div>
+                <div class="contact-info-item__label">Response Time</div>
+                <div class="contact-info-item__value">Usually within 24–48 hours</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form column -->
+          <div class="contact-form">
+            <h3 style="margin-bottom:1.5rem; font-size:1.2rem">Send a Message</h3>
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name <span style="color:var(--clr-red)">*</span></label>
+                  <input type="text" id="firstName" name="firstName" placeholder="John" required autocomplete="given-name" />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Doe" autocomplete="family-name" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address <span style="color:var(--clr-red)">*</span></label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject <span style="color:var(--clr-red)">*</span></label>
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected>Select a topic…</option>
+                  <option value="internship">Internship Opportunity</option>
+                  <option value="freelance">Freelance / Contract Work</option>
+                  <option value="collaboration">Project Collaboration</option>
+                  <option value="general">General Enquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message <span style="color:var(--clr-red)">*</span></label>
+                <textarea id="message" name="message" placeholder="Tell me about your project or opportunity…" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center">
+                Send Message ✉️
+              </button>
+            </form>
+            <!-- Success state -->
+            <div class="form-success" id="formSuccess">
+              <span>✅</span>
+              Message sent! I'll get back to you within 24–48 hours.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script src="/js/components.js"></script>
+  <script>
+    /* Simple contact form — shows success state (swap for Formspree action when ready) */
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const form = this;
+      const inputs = form.querySelectorAll('[required]');
+      let valid = true;
+      inputs.forEach(input => {
+        if (!input.value.trim()) { input.style.borderColor = 'var(--clr-red)'; valid = false; }
+        else { input.style.borderColor = ''; }
+      });
+      if (!valid) return;
+      form.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
